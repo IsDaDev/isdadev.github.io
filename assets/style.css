@@ -324,7 +324,7 @@ footer {
   height: 156px;
   border-radius: 10px;
   padding: 10px;
-  font-size: 22px;
+  font-size: 25px;
   resize: none;
   grid-area: message;
 }
