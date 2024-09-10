@@ -48,6 +48,10 @@
     font-size: 25px;
   }
 
+  .hero-section .hero-content {
+    margin-top: -50px;
+  }
+
   #skill-chart {
     display: grid;
     grid-template-columns: 3fr 1fr;
