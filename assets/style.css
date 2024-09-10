@@ -6,7 +6,9 @@
   --main-font: #00bfff;
   --bg-head: #121212;
   --bg-footer: #1e1e1e;
-  --white: #fff;
+  --bg-navbar: #313131;
+  --white: #ffffff;
+  --default-font-size: 24px;
 }
 
 * {
@@ -31,7 +33,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #313131;
+  background-color: var(--bg-navbar);
 }
 
 .logo {
@@ -50,18 +52,24 @@ body {
 }
 
 .nav-links a {
-  text-decoration: none;
   color: var(--main-font);
-  font-size: 24px;
+  font-size: var(--default-font-size);
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
-.nav-links a[href='#home'] {
-  font-size: 24px;
+.nav-links li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #00bfff;
+  display: block;
+  margin: auto;
+  transition: 1s;
 }
 
-.nav-links a:hover {
-  color: #95daf1;
+.nav-links li:hover::after {
+  width: 100%;
 }
 
 /* *************************************** */
@@ -101,11 +109,13 @@ body {
   text-decoration: none;
   font-size: 18px;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-block;
 }
 
 .cta-button:hover {
   background-color: var(--main-font);
+  transform: scale(1.1);
 }
 
 .blog-link {
@@ -223,7 +233,7 @@ footer {
 }
 
 #projects h4 {
-  font-size: 24px;
+  font-size: var(--default-font-size);
 }
 
 #projects p {
@@ -254,7 +264,7 @@ footer {
 .toggle-button {
   display: none;
   background-color: var(--main-font);
-  color: #121212;
+  color: var(--bg-head);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -297,6 +307,7 @@ footer {
   border-radius: 10px;
   margin: 10px 0;
   font-size: 22px;
+  font-family: 'Ubuntu Mono', sans-serif;
   width: 500px;
 }
 
@@ -334,6 +345,11 @@ input {
   padding: 0.5rem;
 }
 
+#contact .contact-left h3 {
+  font-size: var(--default-font-size);
+  line-break: auto;
+}
+
 /* *************************************** */
 /* Hover-in animation */
 /* *************************************** */
@@ -362,12 +378,12 @@ input {
 
 .section-animate-left {
   opacity: 0;
-  animation: slideInFromLeft 1s forwards;
+  animation: slideInFromLeft 0.9s forwards;
 }
 
 .section-animate-right {
   opacity: 0;
-  animation: slideInFromRight 1s forwards;
+  animation: slideInFromRight 0.9s forwards;
 }
 
 @keyframes chart-item-flow {
