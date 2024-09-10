@@ -1,0 +1,185 @@
+@media screen and (max-width: 768px) {
+  .hero-section {
+    height: 57vh;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: sticky;
+    margin-right: 10px;
+  }
+
+  .nav-links-mobile {
+    display: none;
+    position: absolute;
+    grid-template-columns: auto auto;
+    top: 7%;
+    left: -5%;
+    width: 105%;
+    background-color: #313131;
+  }
+
+  .nav-links-mobile ul {
+    justify-content: space-between;
+  }
+
+  .nav-links-mobile ul li {
+    list-style-type: none;
+    font-size: 20px;
+    text-align: left;
+    padding: 5px;
+  }
+
+  .nav-links-mobile ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .image-container-mobile {
+    align-self: center;
+    margin-right: 20px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .hero-section h1 {
+    font-size: 25px;
+  }
+
+  #skill-chart {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    border: none;
+  }
+
+  #skills {
+    height: 80vh;
+    padding: 0 0;
+  }
+
+  #skills h1 {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .chart-items {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .bar {
+    background-color: var(--main-font);
+    width: 40px;
+    position: relative;
+  }
+
+  .chart-legend {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 70px;
+    font-size: 12px;
+    color: #ccc;
+    margin-left: 5px;
+  }
+
+  .chart-legend-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 20px;
+    color: var(--main-font);
+  }
+
+  .chart-legend-bottom p {
+    transform: rotate(45deg);
+  }
+
+  .chart-legend-bottom div {
+    text-align: center;
+    width: 20%;
+  }
+
+  .project-container {
+    grid-template-columns: auto;
+    margin: 0;
+  }
+
+  #projects .card:hover {
+    transform: scale(1);
+  }
+
+  #projects {
+    padding: 5rem 2rem;
+    height: auto;
+  }
+
+  #projects p {
+    font-size: 17px;
+    line-height: normal;
+  }
+
+  #footer {
+    padding: 0 5rem;
+  }
+
+  #contact {
+    padding: 2rem;
+  }
+
+  #contact .contact-right {
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      'top-left'
+      'top-right'
+      'message'
+      'button';
+    width: auto;
+  }
+
+  #contact .contact-left {
+    height: auto;
+  }
+
+  #contact .contact-right #message {
+    width: 270px;
+  }
+
+  #contact .contact-right input,
+  #contact .contact-right button {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .toggle-button {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .project-details {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1179px) {
+  #skill-chart {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  #skill-chart {
+    border: 1px solid white;
+  }
+}

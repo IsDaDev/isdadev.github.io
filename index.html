@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developer & Cybersecurity Specialist</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/style-min.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <section id="hero">
+      <nav class="navbar">
+        <ul class="nav-links">
+          <div class="desktop-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </div>
+          <a class="mobile-nav">
+            <i class="fa fa-bars"></i>
+          </a>
+        </ul>
+        
+        <div class="logo">
+          <img
+            src="./assets/img/logo-no-background.png"
+            alt="Logo containing the Text IsDa"
+            class="logo-img"
+          />
+        </div>
+      </nav>
+    </section>
+
+    <section id="home" class="hero-section">
+      <nav class="nav-links-mobile">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="sub-pages/blog.html">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="image-container-mobile"></div>
+      </nav>
+      <div class="hero-content">
+        <h1>Hello, I'm IsDaDev</h1>
+        <h1>Web Developer & Aspiring Cybersecurity Specialist</h1>
+        <p>
+          I'm Paul, a student passionate about cybersecurity. I enjoy tackling
+          CTF challenges and building secure solutions and webapps.
+        </p>
+        <p class="blog-link-p">
+          I plan to share a lot of my knowledge on my blog at
+          <a href="sub-pages/blog.html" class="blog-link">blogaddress</a>
+        </p>
+        <a href="#skills" class="cta-button">Learn more</a>
+        
+      </div>
+    </section>
+
+    <section id="skills" class="slide-left">
+      <div class="chart-header"><h1>Skills</h1></div>
+      <div id="skill-chart">
+        <div class="chart-items grid-item-1">
+          <div class="bar item-1 --height=70 JavaScript"></div>
+          <div class="bar item-2 --height=50 C/C++"></div>
+          <div class="bar item-3 --height=65 Python"></div>
+          <div class="bar item-4 --height=30 PHP"></div>
+          <div class="bar item-5 --height=80 Networking"></div>
+        </div>
+        <div class="chart-legend grid-item-2">
+          <p>Code Conqueror</p>
+          <p>Tech Savvy</p>
+          <p>Intermediate Explorer</p>
+          <p>Rising Developer</p>
+          <p>Curious Learner</p>
+        </div>
+
+        <div class="chart-legend-bottom grid-item-3">
+          <div><p>JavaScript</p></div>
+          <div><p>C/C++</p></div>
+          <div><p>Python</p></div>
+          <div><p>PHP</p></div>
+          <div><p>Networking</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="slide-right">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <div class="AV card-header">
+          <div class="card-left card">
+            <h3>SigSafe AV (Work in Progess)</h3>
+            <hr />
+            <button class="toggle-button project-1-button">Show Details</button>
+            <div id="project-1" class="project-details">
+              <div class="after">
+                <h4>SigSafe SBMD</h4>
+                <p>
+                  SigSafe SBMD utilizes signature-based detection to help secure
+                  your machine by detecting malware. It pulls signature
+                  information from a database and compares the signature info to
+                  files on your machine. While the database may not contain the
+                  latest signatures, it can still be effective in identifying
+                  known malware by checking if files on your machine match the
+                  known signature associated with the harmful software.
+                </p>
+              </div>
+
+              <h4>SigSafe WebGuard: Safe Browsing Made Easy</h4>
+              <p>
+                SigSafe WebGuard is intended to provide a safe browsing
+                experience. Before connecting to a web page, WebGuard checks the
+                site against its list of URLs that it considers known malicious
+                URLs. If it matches one on the list, WebGuard will prevent you
+                from connecting to the site to protect you. While the flagged
+                URL list may not always be current, WebGuard acts as an
+                effective layer of protection for your browsing experience.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="homelab card-header">
+          <div class="card-right card">
+            <h3>HomeLab</h3>
+            <hr />
+            <button class="toggle-button project-2-button">Show Details</button>
+            <div id="project-2" class="project-details">
+              <h4>Raspberry Pi4 with MariaDB</h4>
+              <p>
+                Within my homelab I have my raspberry pi configured with MariaDB
+                to begin development on the antivirus project. Inside the
+                database, I have malicious URLs and signatures for testing
+                purposes stored. These signatures enable me to test the
+                antivirus solution in a safe environment to spot and fix flaws.
+              </p>
+
+              <h4>Malware Analysis Setup: REMnux and FlareVM</h4>
+              <p>
+                In my free-time I like dissecting malware, to be able to do that
+                in a safe environment, I set up two virtual machines, one is set
+                up with REMnux and the other configured with FlareVM. REMnux is
+                a Linux-based toolkit for malware reverse-engineering and
+                analysis, and FlareVM is a Windows environment for forensic
+                analysis and malware research. With the combination of these two
+                tools, I can analyse malware samples and investigate the impact
+                and behaviour of the malware.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="slide-left">
+      <div class="contact-left">
+        <h3>
+          Feel free to reach out if you enjoyed what you saw or if you have any
+          questions! I'm always happy to chat and provide more information.
+        </h3>
+      </div>
+      <div class="contact-right">
+        <div class="contact-right-left">
+        <form id="contact-form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Name"
+          />
+          <br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Email"
+          />
+          <br />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            placeholder="Subject"
+          />
+        </div>
+        <div class="contact-right-right">
+          <textarea
+            id="message"
+            name="message"
+            required
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <div class="contact-right-bottom">
+          <button type="submit">Submit</button>
+        </div>
+        </form>
+      </div>
+      <div class="code">
+        <p></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 IsDaDev | All Rights Reserved</p>
+    </footer>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
